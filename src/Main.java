@@ -17,7 +17,7 @@ public class Main {
         studentMap.put(3,student3);
         studentMap.put(4,student4);
         studentMap.put(5,student5);
-       
+
         for (Map.Entry<Integer,Student>student:studentMap.entrySet()){
             System.out.println(student.toString());
         }

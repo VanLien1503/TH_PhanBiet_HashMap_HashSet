@@ -1,0 +1,32 @@
+Giống nhau:
+ - đều không có thứ tự cho các phần tử truyền vào
+ - dùng phương thức hashcode() và equals() để duy trì tính duy nhất của giữ liệu(Mã Băm)
+ - cả 2 không đồng bộ (non-synchronized)
+ -thao tác chen
+Khác nhau:
+
+//1:
+HashMap : cài đặt (implement) Map interface.
+HashSet : cài đặt (implement) Set interface.
+
+//2:
+HashMap : Lưu Trữ Dữ liệu dưới dạng cặp khóa-Giá trị(Key-value)
+HashSet : Lưu trữ dữ liệu dưới dạng đối tượng( Object)
+
+//3:
+HashMap: Bên Trong HashMap Sử dụng Mảng đối tượng entry<K,V>;
+HashSet: Bên Trong Sử Dụng HashMap
+
+//4:
+HashMap: Không cho phép các khóa(key) trung lặp nhưng
+        Cho phép các giá trị (value) trùng lặp
+HashSet: không cho phép các phần tử trung lặp
+
+//5:
+HashMap: Thao tác chèn yêu cầu 2 đối tượng khóa và giá trị
+HashSet: Chỉ yêu cầu 1 đối tượng
+
+//6:
+HashMap: Khi cần dùng duy nhất với Key
+HashSet: khi cần sùng duy nhất với đối tượng
+
